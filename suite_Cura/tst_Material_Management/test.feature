@@ -74,7 +74,7 @@ Feature: Material manager
     And I close the preferences
 
   Scenario: Export material
-    Given Cura has been started
+    Given Cura is running
     When I navigate to menu Preferences and Configure Cura
     And I navigate to Materials in preferences
     And I select Duplicate material
@@ -93,17 +93,17 @@ Feature: Material manager
     Then the file 'materialExport' is a valid 'material'
     And I close the preferences
 
-  Scenario: Import material
-    Given Cura is running
-    When I navigate to menu Preferences and Configure Cura
-    And I navigate to Materials in preferences
-    And I select 'Generic PLA' material in preferences
-    And I select Activate material
-    Then I select 'Generic Export' material in preferences
-    And I select Remove material
-    Then I select Import material
-    And I choose to load 'materialExport'
-    Then the material 'Generic Export' has been added
+  #Scenario: Import material
+    #Given Cura has been started
+    #When I navigate to menu Preferences and Configure Cura
+    #And I navigate to Materials in preferences
+    #And I select 'Generic PLA' material in preferences
+    #And I select Activate material
+    #Then I select 'Generic Export' material in preferences
+    #And I select Remove material
+    #Then I select Import material
+   # And I choose to load 'materialExport'
+    #Then the material 'Generic Export' has been added
 
 
 
