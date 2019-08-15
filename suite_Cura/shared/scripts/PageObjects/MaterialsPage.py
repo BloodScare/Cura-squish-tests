@@ -75,7 +75,8 @@ class Materials(PageObject):
         self.write(input, "<Return>") #Clear the focus.
         
     def setPrintSettingsProperty(self, property_name, property_value):
-        tooltip_area = waitForObject(self.replaceObjectProperty(names.mat_setting_line, property_name))
+        settings_label = self.findObjectWithText(names.mat_lbl_settings, property_name)
+        tooltip_area = waitForObject(self.getParentObj(settings_label))
         input = self.getChildrenOfType(tooltip_area, "TextInputWithHandles")[0] #Should only be one Spinbox in here.      
         self.clear(input)
         self.write(input, property_value)

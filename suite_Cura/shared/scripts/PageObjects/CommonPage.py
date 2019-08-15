@@ -205,9 +205,8 @@ class PageObject:
             test.fail("Gcode file smaller than 1 KB")
         return round(size)
 
-    def getGrandParentObj(self, obj):
-        parent = object.parent(waitForObject(obj))
-        return object.parent(waitForObject(parent))
+    def getParentObj(self, obj):
+        return object.parent(waitForObject(obj))
 
     @staticmethod
     def activateMenuItem(menu_object_names):

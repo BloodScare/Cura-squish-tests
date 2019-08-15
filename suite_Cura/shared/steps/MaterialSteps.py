@@ -64,7 +64,11 @@ def step(context):
 def step(context, tabname):
     materials.selectTab(tabname)
 
-@Step("I change the material print settings '|any|' property to '|word|'")
-def step(context, property_name, property_value):
-    materials.setPrintSettingsProperty(property_name, property_value)
+@Step("I change the material print settings properties")
+def step(context):
+    table = context.table
+    for row in table[1:]:
+        setting = row[0]
+        value = row[1]
+        materials.setPrintSettingsProperty(setting, value)
     

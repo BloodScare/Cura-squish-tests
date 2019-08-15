@@ -149,7 +149,7 @@ mat_input_retraction_distance = {"container": mat_panel_details, "index": 2, "ty
 mat_input_retraction_speed = {"container": mat_panel_details, "index": 3, "type": "TooltipArea", "unnamed": 1, "visible": True}
 mat_input_standby_temperature = {"container": mat_panel_details, "index": 4, "type": "TooltipArea", "unnamed": 1, "visible": True}
 mat_input_fan_speed = {"container": mat_panel_details, "index": 5, "type": "TooltipArea", "unnamed": 1, "visible": True}
-
+mat_lbl_settings = {"container": mat_setting_line, "text": "", "type": "Text", "unnamed": 1, "visible": True}
 
 # custom brand
 mat_cbo_custom = {"container": qqw_qml, "id": "brandSection", "sectionName": "Custom", "type": "MaterialsBrandSection", "unnamed": 1, "visible": True}
