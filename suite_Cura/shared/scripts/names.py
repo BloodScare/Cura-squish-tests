@@ -240,3 +240,4 @@ open_project_file_Remember_my_choice_CheckBox = {"container": open_project_file_
 open_Project_QQuickWindowQmlImpl = {"title": "Open Project", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 ultimaker_Cura_MainWindow = {"title": "Ultimaker Cura", "type": "MainWindow", "unnamed": 1, "visible": True}
 ultimaker_Cura_Skip_Label = {"container": ultimaker_Cura_MainWindow, "text": "Skip", "type": "Label", "unnamed": 1, "visible": True}
+curaSplashScreen1 = "CuraSplashScreen1"
